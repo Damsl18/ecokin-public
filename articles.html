@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articles — EcoKin</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <section class="section" style="padding-top:2rem;">
+    <div class="container">
+      <span class="eyebrow">Éducation</span>
+      <h1>Articles écologiques</h1>
+      <p style="max-width:60ch;">Rédigés et soumis par les citoyens de Kinshasa, validés par l'équipe EcoKin avant publication.</p>
+
+      <form id="searchForm" class="d-flex gap-2 my-3" style="max-width:420px;">
+        <input type="search" id="searchInput" class="form-control" placeholder="Rechercher un article…">
+        <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+
+      <div class="card-grid" id="articlesList">
+        <div class="empty-state"><div class="spinner" style="margin:0 auto;"></div></div>
+      </div>
+
+      <nav class="d-flex justify-content-center gap-2 mt-4" id="pagination"></nav>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/include.js"></script>
+<script src="js/articles.js"></script>
+</body>
+</html>
