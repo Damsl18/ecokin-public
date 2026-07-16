@@ -4,10 +4,10 @@
  */
 const CONFIG = {
   // URL de base de l'API backend (Node/Express)
-  API_BASE_URL: 'https://ecokin-api.onrender.com/api',
+  API_BASE_URL: '/api',
 
   // URL de base des fichiers uploadés (photos, couvertures d'articles)
-  UPLOADS_BASE_URL: 'https://ecokin-api.onrender.com/',
+  UPLOADS_BASE_URL: '',
 
   // URL de l'espace utilisateur (bouton "Publier un article" -> page de connexion)
   USER_APP_URL: 'https://ecokin-user.netlify.app',
