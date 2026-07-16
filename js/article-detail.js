@@ -10,7 +10,7 @@ async function loadArticle() {
     return;
   }
   try {
-    const { article } = await apiGet(`api/articles/${id}`);
+    const { article } = await apiGet(`/articles/${id}`);
     document.title = `${article.titre} — EcoKin`;
     wrap.innerHTML = `
       ${article.cover_image_path ? `<img src="${photoUrl(article.cover_image_path)}" alt="" style="border-radius:14px; margin-bottom:1.5rem; width:100%; aspect-ratio:16/9; object-fit:cover;">` : ''}
