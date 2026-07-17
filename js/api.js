@@ -12,6 +12,7 @@ async function apiGet(path) {
 
 function photoUrl(path) {
   if (!path) return null;
+  if (path.startsWith('http://') || path.startsWith('https://')) return path;
   return `${CONFIG.UPLOADS_BASE_URL}${path}`;
 }
 
