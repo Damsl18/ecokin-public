@@ -10,7 +10,7 @@ function statutColor(statut) {
 function popupSignalement(s) {
   return `
     <strong>${escapeHtml(s.titre || 'Signalement')}</strong><br>
-    <span class="badge-statut badge-${s.statut}">${s.statut.replace('_', ' ')}</span><br>
+    <span class="badge-statut badge-${s.statut || ''}">${(s.statut || 'validé').replace('_', ' ')}</span><br>
     <small>${escapeHtml(s.adresse)}</small>
     ${s.photo_path ? `<br><img src="${photoUrl(s.photo_path)}" alt="" style="width:100%; border-radius:8px; margin-top:6px;">` : ''}
   `;
